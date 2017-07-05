@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             Log.e("Tag", "文件不存在");
 
         }
-        //getContext().getPackageName() + ".fileprovider" "com.junze.cn.androiddrimsdoctor.fileprovider"
+        //getContext().getPackageName() + ".fileprovider" "com.junze.testapkupdate.fileprovider"
         //参数1 上下文, 参数2 Provider主机地址 和配置文件中保持一致   参数3  共享的文件
         Intent intent = new Intent(Intent.ACTION_VIEW);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
