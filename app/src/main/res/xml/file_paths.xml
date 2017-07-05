@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--name：一个引用字符串。
+    path：文件夹“相对路径”，完整路径取决于当前的标签类型。-->
+    <!--
+    <files-path name="name" path="path" /> 相当于Context.getFilesDir() + /path/。
+
+    <cache-path name="name" path="path" />物理路径相当于Context.getCacheDir() + /path/。
+
+    <external-path name="name" path="path" />物理路径相当于Environment.getExternalStorageDirectory() + /path/。
+
+    <external-files-path name="name" path="path" />物理路径相当于Context.getExternalFilesDir(String) + /path/。
+
+    <external-cache-path name="name" path="path" />
+    物理路径相当于Context.getExternalCacheDir() + /path/
+
+    需要注意的是，你apk放到哪儿，里这儿就配置那个路径就ok
+    -->
     <paths>
         <external-path
             name="Download"
             path="" />
-        <external-path
-            name="appTest"/>
-            path="" />
+        <external-path name="appTest" />
+        path="" />
         <external-path
             name="files_root"
             path="Android/data/com.junze.testapkupdate/" />

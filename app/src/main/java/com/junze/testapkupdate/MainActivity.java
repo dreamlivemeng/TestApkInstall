@@ -53,17 +53,11 @@ public class MainActivity extends AppCompatActivity {
     /**
      * 安装的方法
      *
-     * @param path
-     * @param mContext
+     * @param path apk存放的路径
+     * @param mContext 上下文
      */
     private void install1(String path, Context mContext) {
         File file = new File(path);
-        if (file.exists()) {
-            Log.e("Tag", "文件存在");
-        } else {
-            Log.e("Tag", "文件不存在");
-
-        }
         //getContext().getPackageName() + ".fileprovider" "com.junze.testapkupdate.fileprovider"
         //参数1 上下文, 参数2 Provider主机地址 和配置文件中保持一致   参数3  共享的文件
         Intent intent = new Intent(Intent.ACTION_VIEW);
