@@ -41,8 +41,9 @@
         <external-path
             name="Download"
             path="" />
-        <external-path name="appTest" />
-        path="" />
+        <external-path 
+            name="appTest" />
+            path="" />
         <external-path
             name="files_root"
             path="Android/data/com.junze.testapkupdate/" />
